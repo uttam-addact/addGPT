@@ -1,0 +1,245 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	position: relative;
+
+}
+
+.container {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+
+.vh-100 {
+    background: transparent !important;
+    max-width: 454px;
+    margin: 0 auto;
+    border: 0;
+    padding: 38px;
+    text-align: center;
+    box-shadow: rgb(17 12 46 / 15%) 0px 48px 100px 0px;
+    margin-top: 50px !important;
+}
+
+.loginbtn input.btn.btn-primary{
+	margin-top: 30px;
+    cursor: pointer;
+    background: rgb(44, 105, 141) !important;
+    border: 0;
+    font-size: 16px;
+    font-weight: bold;
+   
+    color: #fff;
+    height: 50px;
+}
+
+.form-group input{
+	padding: 0 10px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 20px;
+}
+
+ .list-container {
+    display: flex;
+    justify-content: center;
+   
+}
+
+.list-container .list-item .list-image{
+	width: 100%;
+	display: block;
+    object-fit: cover;
+    height: auto;
+}
+
+.box-with-image {
+    border: 1px solid #ccc;
+    height: 100%;
+   
+}
+
+.image_detail {
+    padding: 20px;
+    
+}
+
+.image_detail a{
+	color: rgb(44, 105, 141);
+	font-weight: 600;
+}
+
+ .page-wrapper form .submit-btn {
+    padding: 5px 23px;
+    background: #000;
+    margin-left: 15px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+.awards-recognition-boxes{
+	margin-top: 50px;
+}
+
+.booklist form {
+    background: rgb(44, 105, 141);
+    padding: 15px 15px;
+    display: flex;
+    margin: 1.25rem auto;
+    max-width: 500px;
+    width: 100%;
+    align-items: center;
+    height: 69px;
+    box-sizing: border-box;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}
+
+.bokkdetail .hp-cmn-boxes .box-with-image{
+	border: 0;
+}
+
+
+
+.hp-cmn-boxes  .box-with-image h2, .hp-cmn-boxes  .box-with-image h4{
+	color: #000 !important;
+}
+
+.breadcum{
+	color: #000;
+}
+
+.bokkdetail .hp-cmn-boxes .row{
+	display: inline-block !important;
+}
+
+.form-group label {
+    display: block;
+    text-align: left;
+    margin-bottom: 7px;
+}
+
+ h1, h2, h3, h4, h5, h6, p {
+    color: rgb(44, 105, 141) !important;
+}
+
+        
+
+.page-wrapper form .form-group.m-0 {
+    width: 100%;
+    display: flex;
+}
+
+.page-wrapper form input#fieldSearch {
+    width: 100%;
+    padding: 10px;
+}
+
+.page-wrapper form .form-group.m-0{
+    position: relative;
+}
+
+.page-wrapper form .submit-btn {
+    padding: 5px 0 0;
+    background: url(../images/search-icon.png) no-repeat right center;
+    margin-left: 15px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    position: absolute;
+    right: 13px;
+    border: 0;
+    font-size: 0;
+    background-size: 21px;
+    width: 23px;
+    cursor: pointer;
+
+}
+
+img.divImg {
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+.box-with-image h5 {
+    color: #fff;
+}
+
+#fullpage .row {
+    display: flex;
+}
+
+.col-md-6 {
+    width: 33.33%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+
+.page-wrapper form input#fieldSearch {
+    width: 100%;
+    padding: 10px 50px 10px 10px;
+    margin-bottom: 0
+}
+
+.page-wrapper form input#fieldSearch:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+
+@media(max-width: 991px){
+	.image_detail{
+		background: transparent;
+	}
+}
+
+
+@media(max-width: 767px){
+	.vh-100{
+		padding: 0 20px;
+		margin-top: 0 !important;
+	}
+
+	.col-md-6{
+		width: 100%;
+	}
+
+	.box-with-image{
+		border: 0
+	}
+
+	.image_detail{
+		height: auto;
+		margin-bottom: 30px;
+	}
+
+	
+	.awards-recognition-boxes{
+		margin-top: 0;
+	}
+
+	.box-with-image{
+		background: transparent;
+	}
+
+
+}
+
+        

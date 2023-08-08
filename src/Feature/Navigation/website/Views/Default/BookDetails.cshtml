@@ -1,0 +1,77 @@
+﻿@using System;
+@using Sitecore;
+@using Sitecore.Data.Items;
+@using System.Collections.ObjectModel;
+@using System.Diagnostics;
+@using System.Reflection;
+@using System.Diagnostics
+@using System.Globalization;
+@using System.Linq
+@using Sitecore.Data.Items
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@using Sitecore.Data.Fields;
+@using Sitecore.Resources.Media;
+@using Sitecore.Links;
+@{
+    var item = Sitecore.Context.Item;
+}
+<div class="bokkdetail">
+    @if (!User.Identity.IsAuthenticated)
+    {
+        string longurl = HttpContext.Current.Request.Url.LocalPath;
+        var url = "/login?query=" + longurl;
+        Response.Redirect(url);
+    }
+    else
+    {
+        if (item != null)
+        {
+            <div class="section cmn-box-img-bg hp-cmn-boxes">
+                <div class="container">
+                    <div class="row awards-recognition-boxes wow customfadeInUp" data-wow-delay="1s">
+                        <div class="col-12 m-0">
+                            <a href="/books" class="breadcum">Home</a>
+                        </div>
+                        <div class="col-12 m-0">
+                            <h2>Book Detail</h2>
+                        </div>
+                    </div>
+                    <div class="row list-container awards-recognition-boxes wow customfadeInUp" data-wow-delay="1s">
+
+                        @*@{var link = LinkManager.GetItemUrl(item);
+                            }*@
+                        <div class="list-item col-md-12 wow customfadeInUp " data-wow-delay="0.2s" data-wow-duration="1s">
+                            <div class="box-with-image avatar-img-wrap" id="imgBox1">
+                                @{
+                                    Sitecore.Data.Fields.ImageField imageField = item.Fields["Detail Photo"];
+                                    string imageUrl = Sitecore.Resources.Media.MediaManager.GetMediaUrl(imageField.MediaItem);
+                                }
+                                <img height="200" width="300" class="divImg list-image" src="@(Sitecore.Resources.Media.MediaManager.GetMediaUrl(imageField.MediaItem))" alt="image">
+                                <h2>@Html.Sitecore().Field("PageTitle", item)</h2>
+                                <h4>@Html.Sitecore().Field("DescriptionMore", item)</h4>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        }
+
+
+    }
+</div>
+@*<script>
+        (function () {
+            $('#submitid').on('click', function () {
+                var Status = $(this).val();
+                $.ajax({
+                    url: 'Default/booklist',
+                    data: {
+                         search: $("#fieldSearch").val(),
+                    },
+                });
+            });
+        });
+    </script>*@
