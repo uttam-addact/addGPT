@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace Lawfirm.Feature.Navigation.Models
+namespace LiveChat.Models
 {
     public class UserModel
     {   

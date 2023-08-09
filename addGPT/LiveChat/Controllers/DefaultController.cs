@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Lawfirm.Feature.Navigation.Models;
+using LiveChat.Models;
 using Sitecore;
 using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.Security.Accounts;
 using Sitecore.Security.Authentication;
 
-namespace Lawfirm.Feature.Navigation.Controllers
+namespace LiveChat.Controllers
 {
     public class DefaultController : Controller
     {

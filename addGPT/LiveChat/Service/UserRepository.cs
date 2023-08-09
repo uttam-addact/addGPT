@@ -7,7 +7,7 @@ using Sitecore.Security.Accounts;
 using Sitecore.Security.Authentication;
 using Sitecore.Web.Authentication;
 
-namespace Lawfirm.Feature.Navigation.Service
+namespace LiveChat.Service
 {
     public static class UserRepository
     {
