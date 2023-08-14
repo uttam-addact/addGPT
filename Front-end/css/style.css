@@ -387,3 +387,68 @@ body {
     border-color: #2B3940;
     border-style: dashed;
 }
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .search-input {
+    flex-grow: 1;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .search-button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .filter-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .filter-label {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  .filter-select {
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .results-section {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+  }
+  .candidate-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  .candidate-info {
+    flex-grow: 1;
+  }
+  .candidate-name {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .add-to-favorites {
+    padding: 6px 10px;
+    background-color: #5865F2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
