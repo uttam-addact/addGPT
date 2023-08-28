@@ -54,7 +54,52 @@
         ]
     });
 
+    const chatlog = document.getElementById("chatlog");
+    const userinput = document.getElementById("userinput");
+    
+    const faq = {
+        "hello": "Hello! How can I assist you?",
+        "how are you": "I'm just a bot, but I'm here to help!",
+        "good morning": "Good morning there! hope you are doing well",
+        "bye": "Goodbye! Feel free to return if you have more questions."
+        // Add more questions and answers here
+    };
+    function sendMessage() {
+        const userInput = userinput.value.trim().toLowerCase();
+        if (userInput === "") return;
 
+        // Display user message
+        displayMessage(userInput, "message user-message");
+
+        // Check if the user's message matches any predefined question
+        if (faq[userInput]) {
+            const botResponse = faq[userInput];
+            displayMessage(botResponse, "message bot-message");
+        } else {
+            const defaultResponse = "I'm sorry, I don't understand that.";
+            displayMessage(defaultResponse, "message bot-message");
+        }
+
+        // Clear the input field
+        userinput.value = "";
+    }
+
+    function displayMessage(message, sender) {
+        const messageDiv = document.createElement("div");
+        messageDiv.className = sender;
+        messageDiv.textContent = message;
+        chatlog.appendChild(messageDiv);
+
+        // Scroll chatbox to the bottom
+        chatlog.scrollTop = chatlog.scrollHeight;
+    }
+
+    // Listen for Enter key press in the input field
+    userinput.addEventListener("keyup", function(event) {
+        if (event.key === "Enter") {
+            sendMessage();
+        }
+    });
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,

@@ -67,18 +67,18 @@
 			<div class="chat-header">
 			  Chatbot
 			</div>
-			<div class="chat-messages">
+			<div class="chat-messages" id="chatlog">
 			  <div class="message bot-message">
 				Hello! How can I assist you today?
 			  </div>
-			  <div class="message user-message">
+			  <!-- <div class="message user-message">
 				Sure, I have a question.
-			  </div>
+			  </div> -->
 			  <!-- More messages go here -->
 			</div>
 			<div class="input-container">
-			  <input type="text" class="user-input" placeholder="Type your message...">
-			  <button class="send-button">Send</button>
+			  <input type="text" class="user-input" id="userinput" placeholder="Type your message...">
+			  <button class="send-button" onclick="sendMessage()">Send</button>
 			</div>
 		</div></div>
 
